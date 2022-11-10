@@ -19,4 +19,4 @@ If the location permission is revoked you will not see yourself on the map.
 
 ## Questions & Issues <g-emoji class="g-emoji" alias="thinking" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png">🤔</g-emoji>
 
-If you have any question or issues please create a [new issue](#)
+If you have any question or issues please create a [new issue](#https://github.com/3-letnik-UN-2022-2023/pora-my-second-app-trdin/issues/new)
