@@ -8,9 +8,9 @@ class Reservartions {
     var restaurants: MutableList<Restaurant> = mutableListOf();
 
     init{
-        restaurants.add(Restaurant("1", "Kralj"))
-        restaurants.add(Restaurant("2", "Spar Restavracija"))
-        restaurants.add(Restaurant("3", "Zlati Lev"))
+        restaurants.add(Restaurant("0", "Pri Florjanu",46.5600997,15.6484543  ))
+        restaurants.add(Restaurant("1", "Okrepčevalnica Baščaršija", 46.5583493, 15.6448828  ))
+        restaurants.add(Restaurant("2", "Kitajska restavracija Peking", 46.5609763, 15.645319 ))
     }
 
     fun push(reservation: Reservation) {
@@ -25,7 +25,7 @@ class Reservartions {
         return string;
     }
 
-    fun checkRestaurant(rest: String): String{
+    /*fun checkRestaurant(rest: String): String{
         var id = 0;
         for(res in restaurants){
             if(res.name.toLowerCase() == rest.toLowerCase() ){
@@ -38,7 +38,7 @@ class Reservartions {
         id += 1
         restaurants.add(Restaurant(id.toString(),rest))
         return id.toString()
-    }
+    }*/
 
     fun getReservation(uuid:String):Reservation?{
         for(res in reservartions){
@@ -66,8 +66,14 @@ class Reservartions {
                 return res.name;
         }
         return "null"
+    }
 
-
+    fun rastaurantNames(): Array<String>{
+        var array: Array<String> = arrayOf();
+        for(rest in restaurants){
+            array += rest.name
+        }
+        return array
     }
 
 }

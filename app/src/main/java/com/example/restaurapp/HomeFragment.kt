@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
 
         _binding!!.addReservation2.setOnClickListener(){
 
-            findNavController().navigate(R.id.action_homeFragment_to_addResFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_mapsFragment)
         }
 
         _binding!!.reservations.setOnClickListener(){

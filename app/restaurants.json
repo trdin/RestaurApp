@@ -1,0 +1,952 @@
+[
+  {
+    "place_id": 15625803,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1709917178,
+    "boundingbox": [
+      "46.5600497",
+      "46.5601497",
+      "15.6484043",
+      "15.6485043"
+    ],
+    "lat": "46.5600997",
+    "lon": "15.6484543",
+    "display_name": "Pri Florjanu, 6, Castle square, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 13456778,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1363498753,
+    "boundingbox": [
+      "46.5582993",
+      "46.5583993",
+      "15.6448328",
+      "15.6449328"
+    ],
+    "lat": "46.5583493",
+    "lon": "15.6448828",
+    "display_name": "Okrepčevalnica Baščaršija, 8, Poštna ulica, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 15380550,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1671601809,
+    "boundingbox": [
+      "46.5609263",
+      "46.5610263",
+      "15.645269",
+      "15.645369"
+    ],
+    "lat": "46.5609763",
+    "lon": "15.645319",
+    "display_name": "Kitajska restavracija Peking, 19, Gregorčičeva ulica, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 6707654,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 847070510,
+    "boundingbox": [
+      "46.5372525",
+      "46.5373525",
+      "15.6239599",
+      "15.6240599"
+    ],
+    "lat": "46.5373025",
+    "lon": "15.6240099",
+    "display_name": "Vivaldi, 33A, Borštnikova ulica, Spodnje Radvanje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 190035138,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 354334118,
+    "boundingbox": [
+      "46.5598415",
+      "46.5600508",
+      "15.6208352",
+      "15.6212296"
+    ],
+    "lat": "46.5599364",
+    "lon": "15.62102636801524",
+    "display_name": "Cesarska hiša, 65A, Obrežna ulica, Koroška vrata, Kamnica, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 66974548,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 6175198541,
+    "boundingbox": [
+      "46.5576022",
+      "46.5577022",
+      "15.6462379",
+      "15.6463379"
+    ],
+    "lat": "46.5576522",
+    "lon": "15.6462879",
+    "display_name": "Ngon, 17b, Main square, Lent, Magdalena, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 67038582,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 6163743526,
+    "boundingbox": [
+      "46.5593",
+      "46.5594",
+      "15.6480955",
+      "15.6481955"
+    ],
+    "lat": "46.55935",
+    "lon": "15.6481455",
+    "display_name": "La Cantina - Center, 30, Vetrinjska ulica, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 149938678,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 187145971,
+    "boundingbox": [
+      "46.5485141",
+      "46.5486517",
+      "15.642987",
+      "15.6432192"
+    ],
+    "lat": "46.54858965",
+    "lon": "15.643102645467971",
+    "display_name": "Cantante Tabor, 37, Ulica Pariške komune, Železničarska kolonija, Tabor, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 173788637,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 278209355,
+    "boundingbox": [
+      "46.5653606",
+      "46.5655714",
+      "15.61896",
+      "15.6193329"
+    ],
+    "lat": "46.56544985",
+    "lon": "15.619146440114575",
+    "display_name": "Gostilna Koblarjev zaliv, 20, Na otok, Koroška vrata, Kamnica, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 70415477,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 6561280020,
+    "boundingbox": [
+      "46.5405098",
+      "46.5406098",
+      "15.6073327",
+      "15.6074327"
+    ],
+    "lat": "46.5405598",
+    "lon": "15.6073827",
+    "display_name": "mlada lipa, 76, Lackova cesta, Zgornje Radvanje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 46580391,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 3932392053,
+    "boundingbox": [
+      "46.5604641",
+      "46.5605641",
+      "15.6647032",
+      "15.6648032"
+    ],
+    "lat": "46.5605141",
+    "lon": "15.6647532",
+    "display_name": "Slovegija - veganska restavracija, 42, Meljska cesta, Melje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 154489517,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 206282758,
+    "boundingbox": [
+      "46.5570765",
+      "46.5573255",
+      "15.6260751",
+      "15.6264565"
+    ],
+    "lat": "46.557189550000004",
+    "lon": "15.626280873213268",
+    "display_name": "Gostišče pri Janezu, 4, Ciril Metodova ulica, Železničarska kolonija, Koroška vrata, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 55377405,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 4827639721,
+    "boundingbox": [
+      "46.5453205",
+      "46.5454205",
+      "15.6438061",
+      "15.6439061"
+    ],
+    "lat": "46.5453705",
+    "lon": "15.6438561",
+    "display_name": "Chinese palace, 41, Focheva ulica, Železničarska kolonija, Tabor, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 55371850,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 4824776621,
+    "boundingbox": [
+      "46.5477585",
+      "46.5478585",
+      "15.6745929",
+      "15.6746929"
+    ],
+    "lat": "46.5478085",
+    "lon": "15.6746429",
+    "display_name": "BONA restaurant Pobrežje, 21, Ulica Veljka Vlahovića, Pobrežje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 56807026,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5052944758,
+    "boundingbox": [
+      "46.5415365",
+      "46.5416365",
+      "15.6334249",
+      "15.6335249"
+    ],
+    "lat": "46.5415865",
+    "lon": "15.6334749",
+    "display_name": "Pizzerija in špageterija Roma, 73, Kardeljeva cesta, Betnava, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 57487338,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5178974893,
+    "boundingbox": [
+      "46.5537493",
+      "46.5538493",
+      "15.652029",
+      "15.652129"
+    ],
+    "lat": "46.5537993",
+    "lon": "15.652079",
+    "display_name": "Takos, 18, Pobreška cesta, Lent, Magdalena, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 57715919,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5226810724,
+    "boundingbox": [
+      "46.5593802",
+      "46.5594802",
+      "15.6490732",
+      "15.6491732"
+    ],
+    "lat": "46.5594302",
+    "lon": "15.6491232",
+    "display_name": "Slovegija Vegan Restaurant Maribor, 6, Ulica škofa Maksimilijana Držečnika, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 57606476,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5178974885,
+    "boundingbox": [
+      "46.553587",
+      "46.553687",
+      "15.652265",
+      "15.652365"
+    ],
+    "lat": "46.553637",
+    "lon": "15.652315",
+    "display_name": "Al Capone, 18, Pobreška cesta, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 57307314,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5140328352,
+    "boundingbox": [
+      "46.5614107",
+      "46.5615107",
+      "15.655194",
+      "15.655294"
+    ],
+    "lat": "46.5614607",
+    "lon": "15.655244",
+    "display_name": "Sedem (7), 7, Cafova ulica, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 89355148,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 8757685132,
+    "boundingbox": [
+      "46.5579865",
+      "46.5580865",
+      "15.6465852",
+      "15.6466852"
+    ],
+    "lat": "46.5580365",
+    "lon": "15.6466352",
+    "display_name": "Steakhouse, 8, Gosposka ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 57930640,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5178974899,
+    "boundingbox": [
+      "46.5542657",
+      "46.5543657",
+      "15.6524447",
+      "15.6525447"
+    ],
+    "lat": "46.5543157",
+    "lon": "15.6524947",
+    "display_name": "Un Momento, 18, Pobreška cesta, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 58178308,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5225491949,
+    "boundingbox": [
+      "46.5638257",
+      "46.5639257",
+      "15.6471058",
+      "15.6472058"
+    ],
+    "lat": "46.5638757",
+    "lon": "15.6471558",
+    "display_name": "Restavracija Park, 5, Pri Parku, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 1203652,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 305949689,
+    "boundingbox": [
+      "46.5573992",
+      "46.5574992",
+      "15.6377296",
+      "15.6378296"
+    ],
+    "lat": "46.5574492",
+    "lon": "15.6377796",
+    "display_name": "Jack & Joe Steak and Burger Club, 20, Ob bregu, Lent, Koroška vrata, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 50310182,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 4420060807,
+    "boundingbox": [
+      "46.5577594",
+      "46.5578594",
+      "15.6455843",
+      "15.6456843"
+    ],
+    "lat": "46.5578094",
+    "lon": "15.6456343",
+    "display_name": "Restavracija Rotovž, 14, Main square, Lent, Magdalena, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 50464691,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 4420060795,
+    "boundingbox": [
+      "46.5603146",
+      "46.5604146",
+      "15.6458634",
+      "15.6459634"
+    ],
+    "lat": "46.5603646",
+    "lon": "15.6459134",
+    "display_name": "Arty bistro, 20, Slovenska ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 53093338,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 4665035808,
+    "boundingbox": [
+      "46.5627886",
+      "46.5628886",
+      "15.7008644",
+      "15.7009644"
+    ],
+    "lat": "46.5628386",
+    "lon": "15.7009144",
+    "display_name": "Vinery and turism Markuš, 255, Malečnik, Maribor, 2229, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 11273196,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1201378038,
+    "boundingbox": [
+      "46.5591931",
+      "46.5592931",
+      "15.6472867",
+      "15.6473867"
+    ],
+    "lat": "46.5592431",
+    "lon": "15.6473367",
+    "display_name": "Ancora, 7, Jurčičeva ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 8547849,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 958131931,
+    "boundingbox": [
+      "46.5579681",
+      "46.5580681",
+      "15.6468325",
+      "15.6469325"
+    ],
+    "lat": "46.5580181",
+    "lon": "15.6468825",
+    "display_name": "Rožmarin, 8, Gosposka ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 12162466,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1244007394,
+    "boundingbox": [
+      "46.5602759",
+      "46.5603759",
+      "15.6553868",
+      "15.6554868"
+    ],
+    "lat": "46.5603259",
+    "lon": "15.6554368",
+    "display_name": "Meating pub & restavracija, 2, Mlinska ulica, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 42383520,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 3408463748,
+    "boundingbox": [
+      "46.5490725",
+      "46.5491725",
+      "15.6433482",
+      "15.6434482"
+    ],
+    "lat": "46.5491225",
+    "lon": "15.6433982",
+    "display_name": "Trattoria Padrino, 12, Žitna ulica, Železničarska kolonija, Tabor, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 212837063,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 482084358,
+    "boundingbox": [
+      "46.538571",
+      "46.5388502",
+      "15.6120662",
+      "15.6123414"
+    ],
+    "lat": "46.5387181",
+    "lon": "15.612213448761578",
+    "display_name": "Gostilna Pri Lipi, 44, Lackova cesta, Zgornje Radvanje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 128959201,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 106079903,
+    "boundingbox": [
+      "46.5420869",
+      "46.5422781",
+      "15.6198884",
+      "15.6201954"
+    ],
+    "lat": "46.54218285",
+    "lon": "15.620041896739622",
+    "display_name": "Restavracija Villa Rustica, 36, Majcigerjeva ulica, Borova vas, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 133806233,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 123717094,
+    "boundingbox": [
+      "46.5629137",
+      "46.5631712",
+      "15.6874708",
+      "15.6879287"
+    ],
+    "lat": "46.5630424",
+    "lon": "15.687622201665683",
+    "display_name": "Frajgraba, 1A, Vodole, Maribor, 2229, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 37097645,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 3010352402,
+    "boundingbox": [
+      "46.5580559",
+      "46.5581559",
+      "15.6446545",
+      "15.6447545"
+    ],
+    "lat": "46.5581059",
+    "lon": "15.6447045",
+    "display_name": "Isabella food & wine, 3, Poštna ulica, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 16689380,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1847525373,
+    "boundingbox": [
+      "46.5544123",
+      "46.5545123",
+      "15.6528071",
+      "15.6529071"
+    ],
+    "lat": "46.5544623",
+    "lon": "15.6528571",
+    "display_name": "Restavracija Interspar, 18, Pobreška cesta, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 62539940,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5699202678,
+    "boundingbox": [
+      "46.5602433",
+      "46.5603433",
+      "15.6459974",
+      "15.6460974"
+    ],
+    "lat": "46.5602933",
+    "lon": "15.6460474",
+    "display_name": "Dobro Jutro Vietnam, 15, Slovenska ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 17201280,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1889591702,
+    "boundingbox": [
+      "46.5383382",
+      "46.5384382",
+      "15.6051178",
+      "15.6052178"
+    ],
+    "lat": "46.5383882",
+    "lon": "15.6051678",
+    "display_name": "Restavracija Radvanjska Idila, 21B, Pohorska ulica, Zgornje Radvanje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 63644277,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5813206386,
+    "boundingbox": [
+      "46.5383752",
+      "46.5384752",
+      "15.6357225",
+      "15.6358225"
+    ],
+    "lat": "46.5384252",
+    "lon": "15.6357725",
+    "display_name": "Bistro Rudi, 122, Betnavska cesta, Betnava, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 62942497,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5693296919,
+    "boundingbox": [
+      "46.5531374",
+      "46.5532374",
+      "15.628202",
+      "15.628302"
+    ],
+    "lat": "46.5531874",
+    "lon": "15.628252",
+    "display_name": "Vučko gril Maribor, 24, Preradovičeva ulica, Železničarska kolonija, Studenci, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 16815139,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1847525375,
+    "boundingbox": [
+      "46.5400477",
+      "46.5401477",
+      "15.6403048",
+      "15.6404048"
+    ],
+    "lat": "46.5400977",
+    "lon": "15.6403548",
+    "display_name": "123 Restavracija, 1, Ulica Eve Lovše, Betnava, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 15512777,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1701698130,
+    "boundingbox": [
+      "46.5567964",
+      "46.5568964",
+      "15.6499802",
+      "15.6500802"
+    ],
+    "lat": "46.5568464",
+    "lon": "15.6500302",
+    "display_name": "Kitajska restavracija Zvezda, 10, Loška ulica, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 15561948,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1701698121,
+    "boundingbox": [
+      "46.5602693",
+      "46.5603693",
+      "15.6531724",
+      "15.6532724"
+    ],
+    "lat": "46.5603193",
+    "lon": "15.6532224",
+    "display_name": "Pri Matevžu, 16, Partizanska cesta, Lent, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 15328134,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 1666634271,
+    "boundingbox": [
+      "46.550121",
+      "46.550221",
+      "15.6387068",
+      "15.6388068"
+    ],
+    "lat": "46.550171",
+    "lon": "15.6387568",
+    "display_name": "Kavarna Q, 45, Gorkega ulica, Železničarska kolonija, Magdalena, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 189292135,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 356996918,
+    "boundingbox": [
+      "46.5566151",
+      "46.5568679",
+      "15.6895699",
+      "15.6898371"
+    ],
+    "lat": "46.55674155",
+    "lon": "15.68970350788494",
+    "display_name": "Pizzeria črni Baron, 158, Malečnik, Maribor, 2229, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 141655218,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 156024044,
+    "boundingbox": [
+      "46.5542762",
+      "46.5544739",
+      "15.6660585",
+      "15.6663301"
+    ],
+    "lat": "46.554375050000004",
+    "lon": "15.666194278585888",
+    "display_name": "MAK, 20, Osojnikova ulica, Greenwich, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 154499505,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 205477376,
+    "boundingbox": [
+      "46.547964",
+      "46.548207",
+      "15.6567827",
+      "15.6571087"
+    ],
+    "lat": "46.548090650000006",
+    "lon": "15.65695477674235",
+    "display_name": "Gostilna Šelih, 7, Ulica borcev za severno mejo, Greenwich, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 154475681,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 205453343,
+    "boundingbox": [
+      "46.538446",
+      "46.5387108",
+      "15.6862893",
+      "15.6866439"
+    ],
+    "lat": "46.53856625",
+    "lon": "15.686454633028124",
+    "display_name": "Gostilna in Motel pri Lešniku, 49, Dupleška cesta, Brezje, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 56502315,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 5012440741,
+    "boundingbox": [
+      "46.560607",
+      "46.560707",
+      "15.646445",
+      "15.646545"
+    ],
+    "lat": "46.560657",
+    "lon": "15.646495",
+    "display_name": "Bro'Sis Bar & Restaurant, 3, Tyrševa ulica, Grajski trg, Center, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 44357774,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "node",
+    "osm_id": 3671535899,
+    "boundingbox": [
+      "46.5614825",
+      "46.5615825",
+      "15.633877",
+      "15.633977"
+    ],
+    "lat": "46.5615325",
+    "lon": "15.633927",
+    "display_name": "Baščaršija, 43c, Gosposvetska cesta, Lent, Koroška vrata, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  },
+  {
+    "place_id": 193921407,
+    "licence": "Data © OpenStreetMap contributors, ODbL 1.0. https://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 376870924,
+    "boundingbox": [
+      "46.5543463",
+      "46.5545468",
+      "15.6194964",
+      "15.61987"
+    ],
+    "lat": "46.5544466",
+    "lon": "15.619683349409264",
+    "display_name": "Zlata srna, 14, Ulica Pohorskega bataljona, Studenci, Maribor, 2000, Slovenia",
+    "class": "amenity",
+    "type": "restaurant",
+    "importance": 0.0001,
+    "icon": "https://nominatim.openstreetmap.org/ui/mapicons/food_restaurant.p.20.png"
+  }
+]

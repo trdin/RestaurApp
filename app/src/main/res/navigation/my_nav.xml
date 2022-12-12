@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_reservationsFragment"
             app:destination="@id/reservationsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
     </fragment>
     <fragment
         android:id="@+id/addResFragment"
@@ -34,8 +37,8 @@
     <fragment
         android:id="@+id/reservationsFragment"
         android:name="com.example.restaurapp.ReservationsFragment"
-        android:label="fragment_reservations"
-        tools:layout="@layout/fragment_reservations" >
+        android:label="Reservations"
+        tools:layout="@layout/fragment_reservations">
         <action
             android:id="@+id/action_reservationsFragment_to_homeFragment"
             app:destination="@id/homeFragment"
@@ -45,6 +48,17 @@
             android:id="@+id/action_reservationsFragment_to_addResFragment"
             app:destination="@id/addResFragment"
             app:popUpTo="@id/addResFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.restaurapp.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_mapsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
     </fragment>
 </navigation>

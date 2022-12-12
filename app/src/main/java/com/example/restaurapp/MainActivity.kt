@@ -1,31 +1,35 @@
 package com.example.restaurapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.ListFragment
-import androidx.fragment.app.commit
-import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.restaurapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
-    lateinit var app: MyApplication
+class MainActivity : AppCompatActivity() {
 
-    private lateinit var navController: NavController
-    //val listFragment = ListFragment()
+    private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        app = application as MyApplication
 
-        val navHostFragment = supportFragmentManager
-            .findFragmentById(R.id.fragment) as NavHostFragment
-        navController = navHostFragment.navController
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val navView: BottomNavigationView = binding.navView
 
-        setupActionBarWithNavController(navController)
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp()||super.onSupportNavigateUp()
+        val navController = findNavController(R.id.nav_host_fragment_activity_main2)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(
+                R.id.homeFragment, R.id.addResFragment, R.id.reservationsFragment, R.id.mapsFragment
+            )
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
 }
