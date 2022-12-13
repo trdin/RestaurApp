@@ -76,4 +76,13 @@ class Reservartions {
         return array
     }
 
+    fun checkReservationResta(id:String): Boolean{
+        for(res in reservartions){
+            if(res.restaurantId == id){
+                return true
+            }
+        }
+        return false
+    }
+
 }

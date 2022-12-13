@@ -10,6 +10,7 @@ import android.location.Location
 import android.os.Bundle
 import android.os.Looper
 import android.view.LayoutInflater
+import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
@@ -18,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import com.example.restaurapp.databinding.FragmentMapsBinding
+import com.example.restaurapp.location.MyMarker
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.LocationCallback
 import org.osmdroid.api.IMapController
@@ -99,14 +101,16 @@ class MapsFragment : Fragment() {
     var path1: Polyline? = null
 
 
-    override fun onCreateView(inflater: LayoutInflater,
-                              container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
 
         app = (requireActivity().application as MyApplication)
 
         Configuration.getInstance()
-            .load(activity?.applicationContext  , activity?.getPreferences(Context.MODE_PRIVATE))
+            .load(activity?.applicationContext, activity?.getPreferences(Context.MODE_PRIVATE))
 
         binding = FragmentMapsBinding.inflate(layoutInflater) //BEFORE THIS LINE
 
@@ -128,6 +132,7 @@ class MapsFragment : Fragment() {
 
         return binding.root
     }
+
     override fun onResume() {
         super.onResume()
         binding.map.onResume()
@@ -162,7 +167,8 @@ class MapsFragment : Fragment() {
     }
 
     fun initLoaction() { //call in create
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(activity as MainActivity)
+        fusedLocationClient =
+            LocationServices.getFusedLocationProviderClient(activity as MainActivity)
         readLastKnownLocation()
     }
 
@@ -260,23 +266,26 @@ class MapsFragment : Fragment() {
     }
 
 
-   /* private fun getPath(): Polyline { //Singelton
-        if (path1 == null) {
-            path1 = Polyline()
-            path1!!.outlinePaint.color = Color.RED
-            path1!!.outlinePaint.strokeWidth = 10f
-            path1!!.addPoint(startPoint.clone())
-            map.overlayManager.add(path1)
-        }
-        return path1!!
-    }*/
+    /* private fun getPath(): Polyline { //Singelton
+         if (path1 == null) {
+             path1 = Polyline()
+             path1!!.outlinePaint.color = Color.RED
+             path1!!.outlinePaint.strokeWidth = 10f
+             path1!!.addPoint(startPoint.clone())
+             map.overlayManager.add(path1)
+         }
+         return path1!!
+     }*/
 
     private fun getPositionMarker(): Marker { //Singelton
         if (marker == null) {
             marker = Marker(map)
             marker!!.title = "Here I am"
             marker!!.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-            marker!!.icon = ContextCompat.getDrawable(activity as MainActivity, com.example.restaurapp.R.drawable.map_pin);
+            marker!!.icon = ContextCompat.getDrawable(
+                activity as MainActivity,
+                com.example.restaurapp.R.drawable.map_pin
+            );
             map.overlays.add(marker)
         }
         return marker!!
@@ -284,14 +293,40 @@ class MapsFragment : Fragment() {
 
     private fun getRestaurants() { //Singelton
 
-        for (rest in app.data.restaurants){
-            val restPin = Marker(map)
+        for (rest in app.data.restaurants) {
+            val restPin = MyMarker(map)
             restPin.title = rest.name
             restPin.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
-            restPin.icon = ContextCompat.getDrawable(activity as MainActivity, com.example.restaurapp.R.drawable.restaurant);
+            if (app.data.checkReservationResta(rest.id)) {
+                restPin.icon = ContextCompat.getDrawable(
+                    activity as MainActivity,
+                    com.example.restaurapp.R.drawable.reservation
+                );
+            } else {
+                restPin.icon = ContextCompat.getDrawable(
+                    activity as MainActivity,
+                    com.example.restaurapp.R.drawable.restaurant
+                );
+            }
             restPin.position.latitude = rest.lat
             restPin.position.longitude = rest.lon
+            restPin.id = rest.id.toInt()
+            restPin.fragment = this
+            //restPin.activity = activity as MainActivity
+            restPin.onLongPress(
+                MotionEvent.obtain(
+                    1,
+                    1,
+                    MotionEvent.ACTION_DOWN,
+                    rest.lat.toFloat(),
+                    rest.lon.toFloat(),
+                    0
+                ), map
+            )
+            //restPin.onDoubleTap(MotionEvent.obtain(1,1, MotionEvent.ACTION_DOWN, rest.lat.toFloat(), rest.lon.toFloat(), 0 ), map)
             map.overlays.add(restPin)
+            restPin.bounds.set(0.0, 0.0, 0.0, 0.0)
+
         }
     }
 

@@ -51,20 +51,26 @@ class AddResFragment : Fragment() {
         val bundle = this.arguments
         if (bundle != null) {
             if (!bundle.isEmpty) {
-                uuid = bundle.getString("uuid").toString()
-                var reservation = app.data.getReservation(uuid)
+                var check = bundle.getString("uuid")
+                var checkRest = bundle.getString("restaurantId")
+                if (check != null) {
+                    uuid = check.toString()
+                    var reservation = app.data.getReservation(uuid)
 
-                if (reservation != null) {
-                    minute = reservation.dateTime.minutes
-                    hour = reservation.dateTime.hours
-                    day = reservation.dateTime.date
-                    month = reservation.dateTime.month
-                    year = reservation.dateTime.year
+                    if (reservation != null) {
+                        minute = reservation.dateTime.minutes
+                        hour = reservation.dateTime.hours
+                        day = reservation.dateTime.date
+                        month = reservation.dateTime.month
+                        year = reservation.dateTime.year
 
-                    _binding!!.datePicker.setText("$day-${month!! + 1}-$year")
-                    _binding!!.timePicker.setText("$hour : $minute")
-                    _binding!!.titleInput.setText(reservation.title)
-                    _binding!!.numberPicker.value = reservation.restaurantId.toInt()
+                        _binding!!.datePicker.setText("$day-${month!! + 1}-$year")
+                        _binding!!.timePicker.setText("$hour : $minute")
+                        _binding!!.titleInput.setText(reservation.title)
+                        _binding!!.numberPicker.value = reservation.restaurantId.toInt()
+                    }
+                }else if(checkRest != null){
+                    _binding!!.numberPicker.value = checkRest.toString().toInt()
                 }
             }
         }
