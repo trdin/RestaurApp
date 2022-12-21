@@ -2,22 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
-
+        android:id="@+id/reservationsFragment"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="My Reservations" />
     <item
         android:id="@+id/addResFragment"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
-
-    <item
-        android:id="@+id/reservationsFragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="reservations" />
+        android:icon="@drawable/add"
+        android:title="Add Reservation" />
     <item
         android:id="@+id/mapsFragment"
         android:icon="@android:drawable/ic_dialog_map"
-        android:title="Map" />
+        android:title="Map of Restaurant" />
 
 </menu>

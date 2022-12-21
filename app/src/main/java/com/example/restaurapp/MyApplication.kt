@@ -2,6 +2,7 @@ package com.example.restaurapp;
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.app.Notification
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
@@ -36,6 +37,7 @@ public class MyApplication : Application(){
 
 
 
+
     @SuppressLint("BinaryOperationInTimber")
     override fun onCreate() {
         super<Application>.onCreate()
@@ -50,8 +52,12 @@ public class MyApplication : Application(){
         if (!sharedPref.contains("ID")) {
             saveID(UUID.randomUUID().toString().replace("-", ""));
         }
+        if(!sharedPref.contains("NotID")){
+            saveNotificationID("0")
+        }
 
         userUuid = getID()!!;
+
 
 
     }
@@ -93,6 +99,25 @@ public class MyApplication : Application(){
 
     fun getID(): String? {
         return sharedPref.getString("ID", "DefaultNoData")
+    }
+
+    private fun saveNotificationID(id: String) {
+        with(sharedPref.edit()) {
+            putString("NotID", id)
+            apply()
+        }
+    }
+
+    private fun getNotificationID(): String? {
+        return sharedPref.getString("NotID", "100")
+    }
+
+
+    fun getSavedNotId(): Int {
+        var notId = getNotificationID()!!.toInt()
+        notId += 1
+        saveNotificationID(notId.toString())
+        return notId
     }
 
 

@@ -2,6 +2,7 @@ package com.example.restaurapp
 
 import android.app.AlertDialog
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,8 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import timber.log.Timber
 
 
 class ReservationsFragment : Fragment() {
@@ -19,9 +22,7 @@ class ReservationsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
 
-        }
     }
 
     override fun onCreateView(
@@ -41,16 +42,22 @@ class ReservationsFragment : Fragment() {
             override fun onClick(p0: View?, position: Int) {
                 val bundle = Bundle()
                 bundle.putString("uuid", app.data.reservartions[position].uuid.toString())
-                findNavController().navigate(
+                (activity as MainActivity).bundle = bundle
+                (requireActivity().findViewById<View>(R.id.nav_view) as BottomNavigationView).selectedItemId =
+                    R.id.addResFragment
+                /*findNavController().navigate(
                     R.id.action_reservationsFragment_to_addResFragment,
                     bundle
-                )
+                )*/
             }
         })
 
-        val bundle = this.arguments
+        val bundle = (activity as MainActivity).bundle
+
         if (bundle != null) {
+
             if (!bundle.isEmpty) {
+
                 if(bundle.getString("result").toString() == "created"){
                     Toast.makeText(
                         activity as MainActivity,
@@ -94,15 +101,14 @@ class ReservationsFragment : Fragment() {
                             "You deleted ${app.data.reservartions[position].title}",
                             Toast.LENGTH_LONG
                         ).show()
+                        //deleting notification
+                        (activity as MainActivity).deleteNotification( app.data.reservartions[position].alarmId)
                         app.data.reservartions.removeAt(position)
                         adapter.notifyDataSetChanged()
                         app.saveToFile()
                     }
                     builder.setNeutralButton("Cancel") { dialogInterface, which -> //performing cancel action
                         Toast.makeText(app, "You canceled the deletion.", Toast.LENGTH_LONG).show()
-                    }
-                    builder.setNegativeButton("No") { dialogInterface, which -> //performing negative action
-                        Toast.makeText(app, "You clicked no.", Toast.LENGTH_LONG).show()
                     }
 
                     // Create the AlertDialog

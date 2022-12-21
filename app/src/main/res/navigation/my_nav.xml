@@ -3,62 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/reservationsFragment">
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.restaurapp.HomeFragment"
-        android:label="Home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_addResFragment"
-            app:destination="@id/addResFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_reservationsFragment"
-            app:destination="@id/reservationsFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_mapsFragment"
-            app:destination="@id/mapsFragment" />
-    </fragment>
     <fragment
         android:id="@+id/addResFragment"
         android:name="com.example.restaurapp.AddResFragment"
         android:label="Add Reservations"
-        tools:layout="@layout/fragment_add_res" >
-        <action
-            android:id="@+id/action_addResFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_addResFragment_to_reservationsFragment"
-            app:destination="@id/reservationsFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_add_res" />
     <fragment
         android:id="@+id/reservationsFragment"
         android:name="com.example.restaurapp.ReservationsFragment"
         android:label="Reservations"
-        tools:layout="@layout/fragment_reservations">
-        <action
-            android:id="@+id/action_reservationsFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
-        <action
-            android:id="@+id/action_reservationsFragment_to_addResFragment"
-            app:destination="@id/addResFragment"
-            app:popUpTo="@id/addResFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_reservations"/>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.example.restaurapp.MapsFragment"
         android:label="Map"
-        tools:layout="@layout/fragment_maps">
-        <action
-            android:id="@+id/action_mapsFragment_to_homeFragment"
-            app:destination="@id/homeFragment"
-            app:popUpTo="@id/homeFragment"
-            app:popUpToInclusive="true" />
-    </fragment>
+        tools:layout="@layout/fragment_maps"/>
 </navigation>

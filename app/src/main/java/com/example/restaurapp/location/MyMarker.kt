@@ -3,19 +3,21 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
 import android.view.MotionEvent
+import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.restaurapp.MainActivity
 import com.example.restaurapp.R
 import com.example.restaurapp.databinding.FragmentMapsBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 
 class MyMarker(mapView: MapView?) : Marker(mapView) {
 
-    lateinit var fragment : Fragment
-    //lateinit var activity: MainActivity
+    //lateinit var fragment : Fragment
+    lateinit var activity: MainActivity
     var id: Int = 0
 
     override fun onLongPress( event: MotionEvent, mapView: MapView): Boolean {
@@ -24,7 +26,9 @@ class MyMarker(mapView: MapView?) : Marker(mapView) {
         if(super.onLongPress(event, mapView)){
             val bundle = Bundle()
             bundle.putString("restaurantId", id.toString())
-            fragment.findNavController().navigate(R.id.addResFragment, bundle)
+            activity.bundle = bundle
+            (activity.findViewById<View>(R.id.nav_view) as BottomNavigationView).selectedItemId =
+                R.id.addResFragment
            // activity.findNavController(R.id.nav_host_fragment_activity_main2).navigate(R.id.addResFragment, bundle)
 
         }

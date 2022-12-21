@@ -7,6 +7,7 @@ import android.content.Intent
 import android.content.IntentSender
 import android.graphics.Color
 import android.location.Location
+import android.os.Build
 import android.os.Bundle
 import android.os.Looper
 import android.view.LayoutInflater
@@ -15,6 +16,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -30,6 +32,7 @@ import timber.log.Timber
 import com.google.android.gms.location.*
 import com.google.android.gms.location.R
 import com.google.android.gms.tasks.Task
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.um.feri.cs.pora.mapkotlinexample.location.MyEventLocationSettingsChange
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
@@ -101,6 +104,7 @@ class MapsFragment : Fragment() {
     var path1: Polyline? = null
 
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -129,6 +133,9 @@ class MapsFragment : Fragment() {
             Manifest.permission.INTERNET
         )
         activityResultLauncher.launch(appPerms)
+
+        //val ac=activity as MainActivity
+        //ac.createNotication();
 
         return binding.root
     }
@@ -260,7 +267,7 @@ class MapsFragment : Fragment() {
             requestingLocationUpdates = true
             startLocationUpdates()
         }
-        mapController.setZoom(18.5)
+        mapController.setZoom(16.5)
         mapController.setCenter(startPoint);
         map.invalidate()
     }
@@ -311,7 +318,7 @@ class MapsFragment : Fragment() {
             restPin.position.latitude = rest.lat
             restPin.position.longitude = rest.lon
             restPin.id = rest.id.toInt()
-            restPin.fragment = this
+            restPin.activity = activity as MainActivity
             //restPin.activity = activity as MainActivity
             restPin.onLongPress(
                 MotionEvent.obtain(

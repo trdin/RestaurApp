@@ -60,6 +60,16 @@ class Reservartions {
         return false
     }
 
+    fun deleteReservation(uuid:String): Boolean {
+        for(res in reservartions){
+            if(res.uuid == uuid) {
+                reservartions.remove(res)
+                return true
+            }
+        }
+        return false
+    }
+
     fun getRestaurant(id: String):String{
         for(res in restaurants){
             if(id==res.id)
