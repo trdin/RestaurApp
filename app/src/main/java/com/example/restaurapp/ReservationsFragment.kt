@@ -2,17 +2,14 @@ package com.example.restaurapp
 
 import android.app.AlertDialog
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import timber.log.Timber
 
 
 class ReservationsFragment : Fragment() {
@@ -51,6 +48,7 @@ class ReservationsFragment : Fragment() {
                 )*/
             }
         })
+       // app.loadData(adapter)
 
         val bundle = (activity as MainActivity).bundle
 
@@ -72,16 +70,11 @@ class ReservationsFragment : Fragment() {
                             "Reservation Updated",
                             Toast.LENGTH_LONG
                         ).show()
-                    }else{
-                        Toast.makeText(
-                            activity as MainActivity,
-                            "Not found",
-                            Toast.LENGTH_LONG
-                        ).show()
                     }
 
                     adapter.notifyDataSetChanged()
                 }
+                (activity as MainActivity).bundle = Bundle()
             }
         }
 
@@ -105,7 +98,7 @@ class ReservationsFragment : Fragment() {
                         (activity as MainActivity).deleteNotification( app.data.reservartions[position].alarmId)
                         app.data.reservartions.removeAt(position)
                         adapter.notifyDataSetChanged()
-                        app.saveToFile()
+                        app.saveDatabase()
                     }
                     builder.setNeutralButton("Cancel") { dialogInterface, which -> //performing cancel action
                         Toast.makeText(app, "You canceled the deletion.", Toast.LENGTH_LONG).show()

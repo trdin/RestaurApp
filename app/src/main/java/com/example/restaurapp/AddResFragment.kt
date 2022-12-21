@@ -169,7 +169,7 @@ class AddResFragment : Fragment() {
                     app.data.push( reservartions)
 
                     val bundle = Bundle()
-                    app.saveToFile()
+                    app.saveDatabase()
                     bundle.putString("result", "created")
 
                     /*findNavController().navigate(
@@ -209,13 +209,9 @@ class AddResFragment : Fragment() {
                             notId
                         )
                     )
-                    app.saveToFile()
+                    app.saveDatabase()
                     val bundle = Bundle()
-                    Toast.makeText(
-                        activity as MainActivity,
-                        succes.toString(),
-                        Toast.LENGTH_LONG
-                    ).show()
+
                     bundle.putString("result", succes.toString())
                     /*findNavController().navigate(
                         R.id.action_addResFragment_to_reservationsFragment,

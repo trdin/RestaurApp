@@ -13,12 +13,7 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.navigation.NavController
-import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.reservartions.Reservation
 import com.example.restaurapp.databinding.ActivityMainBinding
 import com.example.restaurapp.notification.MyNotificationReceiver
@@ -36,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var app: MyApplication
     private lateinit var binding: ActivityMainBinding
     private lateinit var appBarConfiguration: AppBarConfiguration
+
 
     var bundle: Bundle = Bundle();
 
@@ -58,6 +54,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        app = (this.application as MyApplication)
+
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree()) //Init report type
         }
@@ -66,7 +64,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-        app = (this.application as MyApplication)
 
 
         /*navController = findNavController(R.id.nav_host_fragment_activity_main2)
@@ -105,7 +102,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         navView.selectedItemId =
-            R.id.reservationsFragment
+            R.id.addResFragment
 
         /*fm.beginTransaction().add(R.id.nav_host_fragment_activity_main2, addResFragment, "4").hide(addResFragment).commit();
         fm.beginTransaction().add(R.id.nav_host_fragment_activity_main2, mapsFragment , "3").hide(mapsFragment).commit();
@@ -225,7 +222,7 @@ class MainActivity : AppCompatActivity() {
                     this@MainActivity.deleteNotification( reservation!!.alarmId)
                     app.data.deleteReservation(reservation.uuid);
                     //adapter.notifyDataSetChanged()
-                    app.saveToFile()
+                    app.saveDatabase()
 
                     this@MainActivity.bundle = Bundle()
                     (this@MainActivity.findViewById<View>(R.id.nav_view) as BottomNavigationView).selectedItemId =
