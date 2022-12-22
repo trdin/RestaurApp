@@ -158,6 +158,7 @@ class MainActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     fun createNotication(uuid: String, cal: Calendar, name: String, title: String): Int {
         var id = app.getSavedNotId();
+        cal.add(Calendar.HOUR, -1);
         createNotifyWithIntent(
             id,
             uuid,

@@ -55,7 +55,7 @@ class MyNotificationReceiver : BroadcastReceiver() {
         var builder = NotificationCompat.Builder(context, MainActivity.CHANNEL_ID)
             .setSmallIcon(R.drawable.pizza)
             .setContentTitle("Reservation for $name")
-            .setContentText("Title: $title, reservation is in 30 min")
+            .setContentText("Title: $title, reservation is in 1 hour")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setAutoCancel(true)
             //  .setContentIntent(myPendingIntent)
